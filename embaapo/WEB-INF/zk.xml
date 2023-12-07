@@ -11,7 +11,7 @@
 
     <library-property>
         <name>org.zkoss.theme.preferred</name>
-        <value>silvertail</value> <!-- silvertail sapphire  atlantic -->
+        <value>silvertail</value> z<!-- silvertail sapphire  atlantic -->
     </library-property>
 
 

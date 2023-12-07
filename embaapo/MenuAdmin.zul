@@ -1,15 +1,31 @@
-<window id="inicioWindow" title="Página de Inicio" border="normal"
-    viewModel="@id('vm') @init('viewmodel.MenuAdminViewModel')">
-
-    <vbox align="center" spacing="10px">
-        <button label="Log Out" href="Inicio.zul"/>
-        <button label="Dar Roles" href="DarRoles.zul"/>
-        <button label="Monedas" href = "Monedas.zul" />
-        <button label="Quiero ser seller" href = "RegistrarSeller.zul" />
-        <button label="Seller" href = "DeleteSeller.zul" />
-
-
-
-    </vbox>
-
-</window>
+<zk xmlns:h="http://www.w3.org/1999/xhtml">
+    <h:div style="width: 100%; height: 100%; position: relative; background: white">
+        <h:button style="width: 405px; height: 63px; padding-top: 16px; padding-bottom: 19px; padding-left: 32px; padding-right: 32px; left: 265px; top: 436px; position: absolute; background: #4477AA; box-shadow: 0px 3px 12px rgba(255, 153, 0, 0.18); border-radius: 56px; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+            <h:label style="text-align: center; color: white; font-size: 18px; font-family: Red Hat Display; font-weight: 600; line-height: 20px; letter-spacing: 2.70px; word-wrap: break-word">Log out</h:label>
+        </h:button>
+        
+        <h:button style="width: 405px; height: 63px; padding-top: 16px; padding-bottom: 19px; padding-left: 32px; padding-right: 32px; left: 766px; top: 436px; position: absolute; background: #4477AA; box-shadow: 0px 3px 12px rgba(255, 153, 0, 0.18); border-radius: 56px; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+            <h:label style="text-align: center; color: white; font-size: 18px; font-family: Red Hat Display; font-weight: 600; line-height: 20px; letter-spacing: 2.70px; word-wrap: break-word">Dar Roles</h:label>
+        </h:button>
+        
+        <h:button style="width: 405px; height: 63px; padding-top: 16px; padding-bottom: 19px; padding-left: 32px; padding-right: 32px; left: 1249px; top: 436px; position: absolute; background: #4477AA; box-shadow: 0px 3px 12px rgba(255, 153, 0, 0.18); border-radius: 56px; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+            <h:label style="text-align: center; color: white; font-size: 18px; font-family: Red Hat Display; font-weight: 600; line-height: 20px; letter-spacing: 2.70px; word-wrap: break-word">Eliminar Seller</h:label>
+        </h:button>
+        
+        <h:button style="width: 405px; height: 63px; padding-top: 16px; padding-bottom: 19px; padding-left: 32px; padding-right: 32px; left: 766px; top: 580px; position: absolute; background: #4477AA; box-shadow: 0px 3px 12px rgba(255, 153, 0, 0.18); border-radius: 56px; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+            <h:label style="text-align: center; color: white; font-size: 18px; font-family: Red Hat Display; font-weight: 600; line-height: 20px; letter-spacing: 2.70px; word-wrap: break-word">Quiero ser seller</h:label>
+        </h:button>
+        
+        <h:button style="width: 405px; height: 63px; padding-top: 16px; padding-bottom: 19px; padding-left: 32px; padding-right: 32px; left: 1249px; top: 580px; position: absolute; background: #4477AA; box-shadow: 0px 3px 12px rgba(255, 153, 0, 0.18); border-radius: 56px; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+            <h:label style="text-align: center; color: white; font-size: 18px; font-family: Red Hat Display; font-weight: 600; line-height: 20px; letter-spacing: 2.70px; word-wrap: break-word">Anuncios</h:label>
+        </h:button>
+        
+        <h:button style="width: 405px; height: 63px; padding-top: 16px; padding-bottom: 19px; padding-left: 32px; padding-right: 32px; left: 265px; top: 580px; position: absolute; background: #4477AA; box-shadow: 0px 3px 12px rgba(255, 153, 0, 0.18); border-radius: 56px; justify-content: center; align-items: center; gap: 8px; display: inline-flex" onClick='location.href="Monedas.zul"' >
+            <h:label style="text-align: center; color: white; font-size: 18px; font-family: Red Hat Display; font-weight: 600; line-height: 20px; letter-spacing: 2.70px; word-wrap: break-word">Monedas</h:label>
+        </h:button>
+        
+        <h:div style="width: 597px; height: 64px; left: 670px; top: 119px; position: absolute; text-align: center; color: #221F1F; font-size: 40px; font-family: Red Hat Display; font-weight: 700; text-transform: uppercase; word-wrap: break-word">
+            Menu Administrativo<h:br/><h:br/>
+        </h:div>
+    </h:div>
+</zk>

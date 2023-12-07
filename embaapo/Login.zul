@@ -1,25 +1,16 @@
 <zk>
+    <window id="loginWindow" title="Login" border="normal"
+            viewModel="@id('vm') @init('viewmodel.LoginViewModel')">
 
-<window id="loginWindow" title="Login" border="normal" apply="org.zkoss.bind.BindComposer"
-    viewModel="@id('vm') @init('viewmodel.LoginViewModel')">
-    <grid>
-        <rows>
-            <row>
-            <label value="Email:"/>
-            <textbox  value="@bind(vm.email)" />
-            </row>
-            <row>
-                <label value="Contraseña:"/>
-                <textbox value="@bind(vm.password)"  type="password"/>
-            </row>
-            <row>
-                <button label="Iniciar Sesión" onClick="@command('login')" />
-            </row>
-               <row>
-                <label id="errorMessage" value="@bind(vm.errorMessage)" style="color: red;" />
-            </row>
+        <vbox width="100%" height="100vh" align="center" spacing="20px" style="background-color: #FFFFFF;">
 
-        </rows>
-    </grid>
-</window>
+            <vbox align="center" spacing="10px" style="padding: 20px; border: 1px solid #CCCCCC; border-radius: 10px;">
+                <textbox placeholder="Username" width="300px" style="height: 40px; font-size: 16px;"/>
+                <textbox type="password" placeholder="Password" width="300px" style="height: 40px; font-size: 16px;"/>
+                <button label="Login" onClick="@command('login')" style="width: 200px; height: 30px; font-size: 14px; background-color: #0070cc; color: white;"/>
+            </vbox>
+
+        </vbox>
+
+    </window>
 </zk>

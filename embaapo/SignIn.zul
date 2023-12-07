@@ -1,31 +1,28 @@
-<zk>
+<zk xmlns:h="http://www.w3.org/1999/xhtml">
+    <h:div style="width: 100%; height: 100%; position: relative; background: white">
+        <h:div style="width: 689px; height: 94.72px; left: 1093px; top: 529px; position: absolute">
+            <textbox style="width: 689px; height: 94.72px; padding-left:40px ;left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 8px 16px rgba(13.04, 10.35, 43.56, 0.05); border-radius: 60px; border: 1px #EFF0F6 solid; font-size: 18px; font-family: Red Hat Display; font-weight: 500; line-height: 27px; word-wrap: break-word" placeholder="Telefono"  />
+        </h:div>
 
-<window id="registroWindow" title="Registro de Usuario" apply="org.zkoss.bind.BindComposer" border="normal"
-    viewModel="@id('vm') @init('viewmodel.RegistroViewModel')">
+        <h:div style="width: 689px; height: 94.72px; left: 1093px; top: 657px; position: absolute">
+            <textbox style="width: 689px; height: 94.72px; padding-left:40px ;left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 8px 16px rgba(13.04, 10.35, 43.56, 0.05); border-radius: 60px; border: 1px #EFF0F6 solid; font-size: 18px; font-family: Red Hat Display; font-weight: 500; line-height: 27px; word-wrap: break-word"  type= "password" placeholder="Contraseña" />
+        </h:div>
 
-    <vbox align="center" spacing="10px">
-        <label value="Nombre:" />
-        <textbox value="@bind(vm.nombre)" />
+        <h:div style="width: 689px; height: 94.72px; left: 1093px; top: 785px; position: absolute">
+            <textbox style="width: 689px; height: 94.72px; padding-left:40px ; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 8px 16px rgba(13.04, 10.35, 43.56, 0.05); border-radius: 60px; border: 1px #EFF0F6 solid; font-size: 18px; font-family: Red Hat Display; font-weight: 500; line-height: 27px; word-wrap: break-word"  type= "password" placeholder="Confirmar Contraseña" />
+        </h:div>
 
-        <label value="Apellido:" />
-        <textbox value="@bind(vm.apellido)" />
+        <h:div style="width: 193px; height: 67px; padding-top: 16px; padding-bottom: 19px; padding-left: 32px; padding-right: 32px; left: 1341px; top: 924px; position: absolute; background: transparent;  border-radius: 56px; justify-content: center; align-items: center; gap: 8px; display: inline-flex">
+            <h:button style="width: 100%; height: 100%; text-align:center ; absolute; background: #4477AA;  color: white; font-size: 18px;  box-shadow: 0px 3px 12px rgba(255, 153, 0, 0.18); border-radius: 56px; justify-content: center; align-items: center; gap: 8px; display: inline-flex ; font-family: Red Hat Display; font-weight: 600; line-height: 20px; word-wrap: break-word" >Registrarse</h:button>
+        </h:div>
+        <h:div style="width: 689px; height: 94.72px; left: 1093px; top: 273px; position: absolute">
+            <textbox style="width: 689px; height: 94.72px; padding-left:40px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 8px 16px rgba(13.04, 10.35, 43.56, 0.05); border-radius: 60px; border: 1px #EFF0F6 solid; font-size: 18px; font-family: Red Hat Display; font-weight: 500; line-height: 27px; word-wrap: break-word" placeholder="Nombre y Apellido"/>
 
-        <label value="Email:" />
-        <textbox value="@bind(vm.email)" />
-
-        <label value="Teléfono:" />
-        <textbox value="@bind(vm.telefono)" />
-
-        <label value="Contraseña:" />
-        <textbox type="password" value="@bind(vm.password)" />
-
-        <button label="Registrar" onClick="@command('registrar')" />
-
-         <label  value="@bind(vm.errorMessage)" style="color: red;" />
-
-        
-
-    </vbox>
-
-</window>
+        </h:div>
+        <h:div style="width: 689px; height: 94.72px; left: 1093px; top: 401px; position: absolute">
+            <textbox style="width: 689px; height: 94.72px; padding-left:40px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 8px 16px rgba(13.04, 10.35, 43.56, 0.05); border-radius: 60px; border: 1px #EFF0F6 solid; font-size: 18px; font-family: Red Hat Display; font-weight: 500; line-height: 27px; word-wrap: break-word" type="email" placeholder="E-mail" />
+        </h:div>
+        <h:img style="width: 909px; height: 902px; left: 31px; top: 89px; position: absolute; border-radius: 26px; border: 7px #666666 solid; backdrop-filter: blur(4px)" src="https://via.placeholder.com/909x902" />
+        <h:img style="width: 263px; height: 243px; left: 1306px; top: 30px; position: absolute" src="https://via.placeholder.com/263x243" />
+    </h:div>
 </zk>

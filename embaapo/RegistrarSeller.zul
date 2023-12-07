@@ -1,29 +1,31 @@
-<zk>
+<zk xmlns:h="http://www.w3.org/1999/xhtml">
+    <h:div style="width: 100%; height: 100%; position: relative; background: white">
+        <h:img style="width: 100%; height: 100%; border-radius: 26px; border: 7px #666666 solid; backdrop-filter: blur(4px)" src="https://via.placeholder.com/1777x189" />
+        <h:div style="width: 689px; height: 94.72px; left: 615px; top: 481px; position: absolute">
+            <h:div style="width: 689px; height: 94.72px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 8px 16px rgba(13.04, 10.35, 43.56, 0.05); border-radius: 60px; border: 1px #EFF0F6 solid"></h:div>
+            <textbox style="width: 689px; height: 94.72px; padding-left: 40px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 8px 16px rgba(13.04, 10.35, 43.56, 0.05); border-radius: 60px; border: 1px #EFF0F6 solid; font-size: 18px; font-family: Red Hat Display; font-weight: 500; line-height: 27px; word-wrap: break-word"  placeholder="Oficio"/>
+        </h:div>
+        <h:div style="width: 689px; height: 94.72px; left: 615px; top: 609px; position: absolute">
+            <h:div style="width: 689px; height: 94.72px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 8px 16px rgba(13.04, 10.35, 43.56, 0.05); border-radius: 60px; border: 1px #EFF0F6 solid"></h:div>
+            <textbox style="width: 689px; height: 94.72px; padding-left: 40px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 8px 16px rgba(13.04, 10.35, 43.56, 0.05); border-radius: 60px; border: 1px #EFF0F6 solid; font-size: 18px; font-family: Red Hat Display; font-weight: 500; line-height: 27px; word-wrap: break-word"  placeholder="Dirección"/>
+        </h:div>
+        <h:div style="width: 689px; height: 94.72px; left: 615px; top: 737px; position: absolute; display: flex; align-items: center; justify-content: center;">
+            <h:div style="width: 100%; height: 100%; position: absolute; background: white; box-shadow: 0px 8px 16px rgba(13.04, 10.35, 43.56, 0.05); border-radius: 60px; border: 1px rgba(239, 240, 246, 0.5) solid;"></h:div>
+            <datebox style="width: calc(100% - 80px); height: 94.72px; padding-top: 30px; padding-left: 0px; position: absolute; background: white; font-size: 18px; font-family: Red Hat Display; font-weight: 500; line-height: 27px; word-wrap: break-word; border: none; border-color: rgba(239, 240, 246, 0);"
+                placeholder="Fecha de Nacimiento"/>
+        </h:div>
 
-<window id="registroWindow" title="Registro de Usuario" apply="org.zkoss.bind.BindComposer" border="normal"
-    viewModel="@id('vm') @init('viewmodel.RegistroSellerViewModel')">
+        <h:button style="width: 193px; height: 67px; padding-top: 16px; padding-bottom: 19px; padding-left: 32px; padding-right: 32px; left: 870px; top: 876px; position: absolute; background: #4477AA; box-shadow: 0px 3px 12px rgba(255, 153, 0, 0.18); border-radius: 56px; justify-content: center; align-items: center; gap: 8px; display: inline-flex; text-align: center; color: white; font-size: 18px; font-family: Red Hat Display; font-weight: 600; line-height: 20px; word-wrap: break-word">
+            Registrarse
+        </h:button>
 
-    <vbox align="center" spacing="10px">
-        <label value="Nombre:" />
-        <textbox value="@bind(vm.nombre)" />
-
-        <label value="Cedula:" />
-        <textbox value="@bind(vm.cedula)" />
-        <label value="Fecha de nacimiento en formato (YYYY-DD-MM):" />
-        <textbox value="@bind(vm.nacimiento)" />
-
-        <label value="Direccion:" />
-        <textbox  value="@bind(vm.direccion)" />
-
-        <label value="Oficio:" />
-        <textbox value="@bind(vm.oficio)" />
-
-
-        <button label="Registrar" onClick="@command('registrar')" />
-
-        <label id="errorMessage" value="@bind(vm.errorMessage)" style="color: red;" />
-
-    </vbox>
-
-</window>
+        <h:div style="width: 689px; height: 94.72px; left: 615px; top: 225px; position: absolute">
+            <h:div style="width: 689px; height: 94.72px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 8px 16px rgba(13.04, 10.35, 43.56, 0.05); border-radius: 60px; border: 1px #EFF0F6 solid"></h:div>
+            <textbox style="width: 689px; height: 94.72px; padding-left: 40px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 8px 16px rgba(13.04, 10.35, 43.56, 0.05); border-radius: 60px; border: 1px #EFF0F6 solid; font-size: 18px; font-family: Red Hat Display; font-weight: 500; line-height: 27px; word-wrap: break-word"  placeholder="Nombre y Apellido"/>
+        </h:div>
+        <h:div style="width: 689px; height: 94.72px; left: 615px; top: 353px; position: absolute">
+            <h:div style="width: 689px; height: 94.72px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 8px 16px rgba(13.04, 10.35, 43.56, 0.05); border-radius: 60px; border: 1px #EFF0F6 solid"></h:div>
+            <textbox style="width: 689px; height: 94.72px; padding-left: 40px; left: 0px; top: 0px; position: absolute; background: white; box-shadow: 0px 8px 16px rgba(13.04, 10.35, 43.56, 0.05); border-radius: 60px; border: 1px #EFF0F6 solid; font-size: 18px; font-family: Red Hat Display; font-weight: 500; line-height: 27px; word-wrap: break-word"  placeholder="C.I"/>
+        </h:div>
+    </h:div>
 </zk>

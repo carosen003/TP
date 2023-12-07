@@ -1,9 +1,10 @@
 <window id="inicioWindow" title="Página de Inicio" border="normal"
         viewModel="@id('vm') @init('viewmodel.InicioViewModel')">
 
-    <vbox width="1920px" height="1080px" align="center" spacing="10px" style="background-color: #F5F5F5;">
+    <vbox width="100%" height="100vh" align="center" spacing="10px" style="background-color: #FFFFFF;">
 
- <image src="pexels-andrea-piacquadio-3768914.jpg" width="300px" height="300px" style="object-fit: cover; border-radius: 15px;"/>
+        <image src="/Users/sebastianovelar/Desktop/UPA/TP/hola.jpg" width="100%" height="300px" style="object-fit: cover; border-radius: 15px;"/>
+        
         <vbox align="center" spacing="10px" style="padding: 20px;">
             <button label="Login" href="Login.zul" style="width: 200px; height: 40px; border-radius: 20px; background-color: #4477AA; color: black;"/>
             <button label="Sign In" href="SignIn.zul" style="width: 200px; height: 40px; border-radius: 20px; background-color: #4477AA; color: black;"/>
